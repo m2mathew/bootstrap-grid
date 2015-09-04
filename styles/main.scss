@@ -1,121 +1,121 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap.css';
-
+    @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 $navColor: #488AC5;
 $textColor: #93989e;
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
-
     margin-bottom: 0;
     background-color: #fff;
-
     .navbar-default {
         background-color: $navColor;
     }
-
     .navbar-brand {
         font-weight: 600;
         color: $navColor;
         padding-right: 0;
+        padding-bottom: 0.5em;
         font-size: 1.25em;
     }
-
     #navbar-second {
         float: left;
         color: #666971;
         padding-left: 0;
     }
-
+    .navbar-toggle {
+        background-color: $navColor;
+        padding: 0.25em;
+        padding-top: 0;
+        margin-bottom: 0;
+        .icon-bar {
+            width: 1.5em;
+            height: 0.25em;
+            background-color: #fff;
+            margin-top: 5px;
+        }
+    }
 }
 
 .page-header {
+    color: #fff;
     overflow: hidden;
-    height: 20em;
     margin: 0 auto;
-    text-align: center;
     text-shadow: 1px 0px 7px black;
     background-image: url('../images/hero-dark.jpg');
-    background-size: fit;
-
-    .header-title {
-        color: #fff;
-        padding-top: 3em;
-    }
-
+    background-size: cover;
+    padding: 4em 0;
+    .header-title {}
     .header-subtext {
-        color: #fff;
-        font-size: 1.2em;
+        font-size: 1.25em;
         font-weight: normal;
-        padding: auto 2em;
     }
+}
 
+well .overview {
+    background-color: #fff;
 }
 
 .well {
     color: #ABAFB2;
-
-    .well-title {
-        font-size: 1.3em;
-        font-weight: bold;
-        margin-top: 0;
-    }
-
-    .overview {
-        height: 17.25em;
-        background-color: #fff;
-    }
-
-    .overview-top {
-        padding: 2em;
-    }
-
-    .btn-primary {
-        margin-top: 1em;
-        font-size: 0.8em;
-        font-weight: 100;
-    }
-}
-
- .well.well-content {
-        background-color: #F0F0F0;
+    //     .well-title {
+    //         font-size: 1.3em;
+    //         font-weight: bold;
+    //         margin-top: 0;
+    //     }
+    //     .btn-primary {
+    //         width: 15em;
+    //         height: 2em;
+    //         margin-top: 1em;
+    //         font-size: 0.75em;
+    //     }
+    // }
+    //  .well.well-content {
+    //         background-color: #F0F0F0;
+    //         border: none;
+    //         color: #AAAAAA;
+    //         padding-top: 1em;
+    //     }
+    .thumbnail {
         border: none;
-        color: #AAAAAA;
-        padding-top: 1em;
+        .caption {
+            color: #A4A4A4;
+            font-size: 1.3em;
+        }
     }
-
-
-
-.thumbnail {
-    border: none;
-
-    .caption {
-        color: #A4A4A4;
-        font-size: 1.3em;
+    .bike-img {
+        margin: 1em auto;
     }
-}
-
-.bike-img {
-    margin: 1em auto;
-}
-
-.footer-box {
-    background-color: #3A414A;
-    color: $textColor;
-    padding: 2em;
-
-    h4 {
-        font-weight: bold;
-    }
-
-    a {
-        text-decoration: underline;
+    .footer-box {
+        background-color: #3A414A;
         color: $textColor;
+        padding: 2em;
+        h5 {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: underline;
+            color: $textColor;
+        }
+        .footer-summary {}
     }
-
-    .footer-summary {
-
+    @media screen and (min-width: 48em) {
+        h1 {
+            font-size: 3em;
+            text-align: left;
+        }
+        h2 {
+            font-size: 2em;
+            text-align: right;
+        }
     }
-}
+    @media screen and (min-width: 75em) {
+        h1 {
+            font-size: 5em;
+            text-align: left;
+        }
+        h2 {
+            font-size: 2.5em;
+            text-align: right;
+        }
+    }

@@ -1,81 +1,122 @@
 @import url(../node_modules/bootstrap/dist/css/bootstrap.css);
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
-.navbar {
-  margin-bottom: 0;
-  background-color: #fff; }
-  .navbar .navbar-default {
-    background-color: #488AC5; }
-  .navbar .navbar-brand {
+.navbar.navbar-default {
+  background-color: #fff;
+  border: none;
+  margin: 0; }
+  .navbar.navbar-default .navbar-toggle {
+    background-color: #418BCC;
+    padding: 4px;
+    line-height: 20px;
+    margin-right: 5em; }
+    .navbar.navbar-default .navbar-toggle span.icon-bar {
+      background-color: white;
+      height: 4px;
+      width: 30px;
+      border-radius: 7px;
+      margin: 5px 0; }
+  .navbar.navbar-default ul li {
+    margin-right: 40px; }
+  .navbar.navbar-default .login-button {
+    margin-top: 7px;
+    width: 85px; }
+  .navbar.navbar-default .navbar-brand {
+    font-size: 1.75em;
     font-weight: 600;
-    color: #488AC5;
-    padding-right: 0;
-    padding-bottom: 0.5em;
-    font-size: 1.25em; }
-  .navbar #navbar-second {
-    float: left;
-    color: #666971;
-    padding-left: 0; }
-  .navbar .navbar-toggle {
-    background-color: #488AC5;
-    padding: 0.25em;
-    padding-top: 0;
-    margin-bottom: 0; }
-    .navbar .navbar-toggle .icon-bar {
-      width: 1.5em;
-      height: 0.25em;
-      background-color: #fff;
-      margin-top: 5px; }
+    text-transform: uppercase; }
+    .navbar.navbar-default .navbar-brand span#snap {
+      color: #508ABC; }
+    .navbar.navbar-default .navbar-brand span#grid {
+      color: #6F7376; }
 
-.page-header {
+.hero {
+  width: 100%;
+  background-image: url(/images/hero-dark.jpg);
+  background-size: cover; }
+  .hero #hero-title {
+    font-size: 4em;
+    font-weight: 300;
+    margin-top: 1.75em; }
+  .hero #hero-text {
+    font-size: 1.75em;
+    font-weight: 100;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 3em; }
+
+h1 {
   color: #fff;
-  overflow: hidden;
-  margin: 0 auto;
-  text-shadow: 1px 0px 7px black;
-  background-image: url("../images/hero-dark.jpg");
-  background-size: cover;
-  padding: 4em 0; }
-  .page-header .header-subtext {
-    font-size: 1.25em;
-    font-weight: normal; }
+  font-size: 5em;
+  text-align: center; }
 
-well .overview {
-  background-color: #fff; }
+h2 {
+  color: #fff;
+  text-align: center; }
+
+h3, h4 {
+  color: #8E9295;
+  margin-bottom: 1.5em;
+  font-weight: 600;
+  font-size: 1.5em; }
+
+h4 {
+  text-align: center;
+  margin-bottom: 1em; }
+
+small {
+  color: #bbb; }
+
+p {
+  color: #8B8B8B;
+  margin-bottom: 1.5em; }
+
+.download {
+  margin-top: 1.5em;
+  padding: 0.4em 5em;
+  font-size: 0.8em; }
 
 .well {
-  color: #ABAFB2; }
-  .well .well-title {
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 0; }
-  .well .btn-primary {
-    width: 15em;
-    height: 2em;
-    margin-top: 1em;
-    font-size: 0.75em; }
-
-.well.well-content {
-  background-color: #F0F0F0;
   border: none;
-  color: #AAAAAA;
+  text-align: left; }
+  .well .well-content {
+    text-align: left; }
+  .well .well-title {
+    text-align: left;
+    font-size: 1.2em;
+    color: #B0AFB3;
+    margin-bottom: 0.5em; }
+
+.banner {
   padding-top: 1em; }
+  .banner #mid-title {
+    text-align: left; }
 
-.thumbnail {
-  border: none; }
-  .thumbnail .caption {
-    color: #A4A4A4;
-    font-size: 1.3em; }
+hr {
+  color: #444; }
 
-.bike-img {
-  margin: 1em auto; }
+.thumbs .thumb-caption {
+  font-size: 1.5em;
+  color: #A1A1A1; }
 
-.footer-box {
-  background-color: #3A414A;
-  color: #93989e;
-  padding: 2em; }
-  .footer-box h4 {
-    font-weight: bold; }
-  .footer-box a {
-    text-decoration: underline;
-    color: #93989e; }
+footer {
+  background: #3A414B; }
+  footer .about-links a {
+    display: block; }
+
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: 3em;
+    text-align: right; }
+  h2 {
+    font-size: 2em;
+    text-align: left; } }
+
+@media screen and (min-width: 75em) {
+  h1 {
+    font-size: 5em;
+    text-align: center; }
+  h2 {
+    font-size: 2.5em;
+    text-align: center; } }

@@ -1,0 +1,116 @@
+@import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff; }
+
+h1 {
+  color: #fff;
+  font-size: 4em;
+  text-align: center; }
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 500; }
+
+h3, h4 {
+  color: #8E9295;
+  margin-bottom: 0; }
+
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #fff; }
+  .navbar .navbar-default {
+    background-color: #488AC5; }
+  .navbar .navbar-brand {
+    font-weight: 600;
+    color: #488AC5;
+    padding-right: 0;
+    padding-bottom: 0.5em;
+    font-size: 1.5em; }
+  .navbar #navbar-second {
+    float: left;
+    color: #666971;
+    padding-left: 0; }
+  .navbar .navbar-toggle {
+    width: 2.5em;
+    text-align: center;
+    background-color: #488AC5;
+    padding: 0.25em;
+    padding-top: 0;
+    margin-bottom: 0; }
+    .navbar .navbar-toggle .icon-bar {
+      width: 1.5em;
+      height: 0.25em;
+      background-color: #fff;
+      margin-top: 0.5em; }
+
+.page-header {
+  color: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+  text-shadow: 1px 0px 7px black;
+  background-image: url("../images/hero-dark.jpg");
+  background-size: cover;
+  padding: 4em 0; }
+
+.overview-title {
+  font-weight: bold;
+  font-size: 1.5em; }
+  .overview-title > p {
+    color: #ABAFB2; }
+
+.well {
+  color: #ABAFB2;
+  text-align: left;
+  border: none; }
+  .well .well-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: left; }
+    .well .well-title p {
+      font-size: 0.8em; }
+  .well .btn-primary {
+    width: 15em;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 0.75em; }
+
+.thumbnail {
+  border: none; }
+  .thumbnail .caption {
+    color: #A4A4A4;
+    font-size: 1.3em; }
+
+footer {
+  background-color: #3A414A;
+  color: #93989e;
+  padding: 2em; }
+  footer h5 {
+    font-weight: bold;
+    font-size: 1.2em; }
+  footer a {
+    text-decoration: underline;
+    color: #93989e; }
+
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: 3em;
+    text-align: right; }
+  h2 {
+    font-size: 1.75em;
+    text-align: left; } }
+
+@media screen and (min-width: 75em) {
+  h1 {
+    font-size: 5em;
+    text-align: left; }
+  h2 {
+    font-size: 2em;
+    text-align: right; } }
